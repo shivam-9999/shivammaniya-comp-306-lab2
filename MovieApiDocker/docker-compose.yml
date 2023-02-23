@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  movieapidocker:
+    image: postgres 
+    volumes:
+      - ./database:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=portfoilo
+      - POSTGRES_USER=movie
+      - POSTGRES_PASSWORD=secret
