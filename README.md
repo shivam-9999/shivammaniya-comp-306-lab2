@@ -3,25 +3,30 @@
 
 AlbumImages
 
+POST
+/Albums
+
 
 POST
 /albums/{albumId}/images
 Albums
 
 
-POST
-/Albums
+
 DeleteAlbun
 
 
-DELETE
+----DELETE-----
 /{albumId}
 DeleteImage
 
 
-DELETE
+------DELETE-----
 /{albumId}/images/{imageId}
-GetAlbums
+
+
+
+----GetAlbums------
 
 
 GET
