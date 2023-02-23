@@ -16,12 +16,13 @@ Albums
 DeleteAlbun
 
 
-----DELETE-----
+DELETE
+
 /{albumId}
 DeleteImage
 
 
-------DELETE-----
+DELETE
 /{albumId}/images/{imageId}
 
 
