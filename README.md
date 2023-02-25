@@ -42,3 +42,5 @@ GetImageForAlbum
 
 GET
 /albums/{albumId}/images/{imageId}
+
+docker-compose up working
