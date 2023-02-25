@@ -5,11 +5,12 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /app
-COPY ["MovieApiDocker.csproj", "MovieApiDocker/"]
+COPY ["MovieApiDocker.csproj", "."]
 
+RUN dotnet restore "./MovieApiDocker.csproj"
 COPY . .
+WORKDIR "/src/."
 
-RUN dotnet restore
 RUN dotnet build -c Release -o /app/build
 
 FROM build AS publish
