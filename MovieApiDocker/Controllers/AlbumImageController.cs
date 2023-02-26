@@ -7,9 +7,6 @@ using System.IO;
 using System.Threading.Tasks;
 
 
-//string awsAccessKey = "AKIA4GFHO7EAWBXE4767";
-//string awsSecretKey = "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";
-//IAmazonS3 s3Client =new AmazonS3Client(awsAccessKey, awsSecretKey, Amazon.RegionEndpoint.USEast1);
 
 [ApiController]
 [Route("albums/{albumId}/images")]
